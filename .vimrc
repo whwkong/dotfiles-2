@@ -78,6 +78,9 @@ if has("autocmd")
     \   exe "normal! g`\"" |
     \ endif
 
+  " Set 2-space YAML as the default with carriage return after colon
+  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
   augroup END
 
 else
